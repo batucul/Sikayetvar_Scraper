@@ -1,4 +1,5 @@
-Overview
+#Overview
+
 The provided Python script is designed to scrape customer complaints from the "sikayetvar.com" website for a specified company or service. It does so by performing the following steps:
 
 Setting up a session for making HTTP requests using the requests library with a retry mechanism.
@@ -9,7 +10,8 @@ Storing the extracted data in a Pandas DataFrame.
 Saving the DataFrame as an Excel file.
 Additionally, the script uses the Gradio library to create a user interface for running the scraping process. Users can input the name of the company or service they want to scrape complaints for, and the script will perform the scraping and provide an Excel file as output.
 
-Code Explanation
+#Code Explanation
+
 Here is an explanation of the key functions and sections in the code:
 
 setup_session(): Configures and returns a session for making HTTP requests with retry mechanisms to handle network issues.
@@ -24,7 +26,8 @@ scrape_and_save(kargo, progress=gr.Progress()): The main function that orchestra
 
 Gradio Interface (iface): Sets up a Gradio interface that allows users to input the company or service name and triggers the scraping process.
 
-Usage
+#Usage
+
 To use this script, follow these steps:
 
 Ensure you have the required libraries (pandas, bs4, requests, gradio, tqdm) installed.
@@ -37,7 +40,8 @@ Click the "Submit" button in the Gradio interface to start the scraping process.
 
 The script will display the scraping progress in the console, and once completed, it will provide a link to download the scraped data as an Excel file.
 
-Note
+#Note
+
 Be mindful of web scraping etiquette and ensure you are scraping data only from websites that allow it. Always check and respect the website's terms of service and robots.txt file.
 
 The script uses random delays between requests to avoid overloading the website's server and to simulate more natural browsing behavior.
